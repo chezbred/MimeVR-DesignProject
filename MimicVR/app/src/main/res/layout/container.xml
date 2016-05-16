@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+	<!--android:background="#ff345963">
+		ilagay niyo to kung gusto niyo maglayout. para makita niyo yung workspace
+		Leave niyo ung redundant na relativelayout na sibling nung parent. Pang hawak sa inflater
+	-->
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="100dip"
+		android:weightSum="2">
+
+		<Button android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:text="Toast"
+			android:id="@+id/toast"
+			android:layout_weight="1"/>
+
+		<LinearLayout android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="horizontal"
+			android:layout_weight="1"
+			android:weightSum="2">
+
+			<Button android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:text="Pointer X"
+				android:id="@+id/pointerX"
+				android:layout_weight="1"/>
+
+			<Button android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:text="Pointer Y"
+				android:id="@+id/pointerY"
+				android:layout_weight="1"/>
+
+		</LinearLayout>
+
+
+
+	</LinearLayout>
+
+
+
+</RelativeLayout>
