@@ -17,6 +17,12 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"/>
 
+    <com.potechlab.mimicvr.SuperKeyboardView
+        android:weightSum="2"
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+
     <com.potechlab.mimicvr.OverlayView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"/>

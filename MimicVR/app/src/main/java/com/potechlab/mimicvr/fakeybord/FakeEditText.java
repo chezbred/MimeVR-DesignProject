@@ -1,4 +1,4 @@
-package com.potechlab.fakeybord;
+package com.potechlab.mimicvr.fakeybord;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -7,7 +7,6 @@ import android.content.IntentFilter;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class FakeEditText extends TextView {
     private boolean mAttached;
@@ -26,7 +25,6 @@ public class FakeEditText extends TextView {
         setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Toast.makeText(getContext(), getText().toString(), Toast.LENGTH_SHORT).show();
                 clicked(getText().toString());
 
             }
@@ -37,7 +35,6 @@ public class FakeEditText extends TextView {
         Intent intent = new Intent();
         intent.setAction("com.potechVR.KEYBOARD");
         intent.putExtra("text", text);
-
         getContext().sendBroadcast(intent);
     }
 

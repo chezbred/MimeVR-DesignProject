@@ -9,21 +9,27 @@
 	<LinearLayout
 		android:orientation="vertical"
 		android:layout_width="fill_parent"
-		android:layout_height="100dip"
-		android:weightSum="2">
+		android:layout_height="fill_parent"
+		android:weightSum="3">
+
+		<com.potechlab.mimicvr.fakeybord.FakeEditText
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:background="#ff456743"
+			android:textColor="#ffffffff"
+			android:hint="aryne"
+			android:text="TEST TEXT"/>
 
 		<Button android:layout_width="match_parent"
 			android:layout_height="match_parent"
 			android:text="Toast"
 			android:id="@+id/toast"
 			android:layout_weight="1"/>
-
 		<LinearLayout android:layout_width="match_parent"
 			android:layout_height="match_parent"
 			android:orientation="horizontal"
 			android:layout_weight="1"
 			android:weightSum="2">
-
 			<Button android:layout_width="match_parent"
 				android:layout_height="match_parent"
 				android:text="Pointer X"
@@ -35,13 +41,6 @@
 				android:text="Pointer Y"
 				android:id="@+id/pointerY"
 				android:layout_weight="1"/>
-
 		</LinearLayout>
-
-
-
 	</LinearLayout>
-
-
-
 </RelativeLayout>
